@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+   <title>HTML5 + CSS3 + Javascript > PowerPoint</title>
+	
+	<!-- Info about this deck -->
+	<meta name="description" content="A Deck.js presentation for Sprint IT Day 2012 @ the University of Guelph">
+	<meta name="author" content="Craig Hyatt">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="core/deck.core.css">
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+
+	<!-- CodeMirror Extension -->
+   <!-- Base codemiror code -->
+   <script src="/extensions/codemirror/codemirror.js"></script>
+
+   <!-- Syntax highlighting Modes -->
+
+   <!-- javascript -->
+   <script src="/extensions/codemirror/mode/javascript/javascript.js"></script>
+
+   <!-- html mode (note html mode requires xml, css and javascript) -->
+   <script src="/extensions/codemirror/mode/xml/xml.js"></script>
+   <script src="/extensions/codemirror/mode/css/css.js"></script>
+   <script src="/extensions/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+   <!-- Plugin code -->
+   <script src="/extensions/codemirror/deck.codemirror.js"></script>
+   <link rel="stylesheet" href="extensions/codemirror/deck.codemirror.css">
+   <link rel="stylesheet" href="/extensions/codemirror/themes/default.css">
+   <!-- End CodeMirror Extension -->
+
+	<!-- Theme CSS files -->
+	<link rel="stylesheet" href="themes/style/uofg.css">
+	<link rel="stylesheet" href="themes/transition/fade.css">
+	
+	<script src="modernizr.custom.js"></script>
+
+</head>
+
+<body class="deck-container">
+
+<!-- THE DECK STARTS HERE -->
+<section class="slide">
+  <h1>In the Beginning...</h1>
+</section>
+<section class="slide">
+  <h2>A Web Standards Guru.</h2>
+  <iframe src="http://en.wikipedia.org/wiki/Eric_Meyer" height="768px" width="1024px"></iframe> 
+</section>
+<section class="slide">
+  <h2><a href="http://meyerweb.com/eric/tools/s5/">S5.</a></h2>
+  <blockquote cite="http://meyerweb.com/eric/tools/s5/">
+    <p>It's totally simple, and it's totally standards-driven.</p>
+    <p><cite>-Eric Meyer</cite></p>
+  </blockquote>
+</section>
+<section class="slide">
+  <h2>Not Bad.</h2>
+  <iframe src="http://prezi.com/" height="768px" width="1024px"></iframe> 
+</section>
+<section class="slide">
+  <h2>Kind of Impressive.</h2>
+  <iframe src="http://bartaz.github.com/impress.js/#/overview" height="768px" width="1024px"></iframe> 
+</section>
+<section class="slide">
+  <h2>HTML5 + CSS3 + Javascript</h2>
+  <iframe src="http://imakewebthings.com/deck.js/" height="768px" width="1024px"></iframe> 
+</section> 
+<section class="slide">
+  <h2>How does it work?</h2>
+  <ol>
+    <li>
+      <p>Write HTML5</p>
+    </li>
+    <li>
+      <p>Add CSS3 Style</p>
+    </li>
+    <li>
+      <p>Optional: Add CSS3 Transitions</p>
+    </li>
+    <li>
+      <p>Optional: Add Javascript Extensions</p>
+    </li>
+  </ol>
+</section>
+<section class="slide">
+  <h2>The Markup</h2>
+  <pre><code>&lt;section class=&quot;slide&quot;&gt;
+  &lt;h2&gt;How to Make a Deck&lt;/h2&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;h3&gt;Write Slides&lt;/h3&gt;
+      &lt;p&gt;Slide content is simple HTML.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;h3&gt;Choose Themes&lt;/h3&gt;
+      &lt;p&gt;One for slide styles and one for deck transitions.&lt;/p&gt;
+    &lt;/li&gt;
+    &hellip;
+  &lt;/ol&gt;
+&lt;/section&gt;</code></pre>
+</section>
+<section class="slide">
+<h2>Add CSS Style</h2>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/style-theme.css&quot;&gt;</code></pre>
+</section>
+<section class="slide">
+<h2>Add CSS3 Transitions</h2>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/transition-theme.css&quot;&gt;</code></pre>
+</section>
+<section class="slide">
+<h2>Add Javascript Extensions</h2>
+<pre><code>&lt;form action=&quot;.&quot; method=&quot;get&quot; class=&quot;goto-form&quot;&gt;
+   &lt;label for=&quot;goto-slide&quot;&gt;Go to slide:&lt;/label&gt;
+   &lt;input type=&quot;number&quot; name=&quot;slidenum&quot; id=&quot;goto-slide&quot; list=&quot;goto-datalist&quot;&gt;
+   &lt;datalist id=&quot;goto-datalist&quot;&gt;&lt;/datalist&gt;
+   &lt;input type=&quot;submit&quot; value=&quot;Go&quot;&gt;
+&lt;/form&gt;
+
+&lt;script src=&quot;extensions/goto/deck.goto.js&quot;&gt;&lt;/script&gt;</code></pre>
+</section>
+<section class="slide">
+  <h1>Features</h1>
+</section>
+<section class="slide">
+  <h2>Photos</h2>
+  <p>&nbsp;</p>
+  <a href="http://www.flickr.com/photos/cat-box/6262552465/" title="Kitten by Cat Box2011, on Flickr"><img src="http://farm7.staticflickr.com/6059/6262552465_e53bccbd52_z.jpg" width="640" height="427" alt="Kitten"></a>
+</section>
+<section class="slide">
+  <h2>Video</h2>
+  <p>&nbsp;</p>
+  <iframe src="http://player.vimeo.com/video/23608259?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</section>
+<section class="slide">
+  <h2>Blockquotes</h2>
+  <p>&nbsp;</p>
+  <blockquote cite="http://www.amazon.ca/Steve-Jobs-Walter-Isaacson/dp/1451648537">
+    <p>People who know what they're talking about don't need PowerPoint</p>
+    <p><cite>-Steve Jobs</cite></p>
+  </blockquote>
+</section>
+<section class="slide">
+  <h1>So what?</h1>
+</section>
+<section class="slide">
+  <h2>Deep Linking</h2>
+  <h1><a href="http://www.uoguelph.ca/~chyatt/DeckJS/index.html#slide-2">A link to slide 2</a></h1>
+</section>
+<section class="slide">
+  <h2>Plain Text</h2>
+  <p>&nbsp;</p>
+  <a href="http://www.flickr.com/photos/kent-chen/4907976984/" title="Vim 7.3 Released by Kent-Chen, on Flickr"><img src="http://farm5.staticflickr.com/4114/4907976984_20b047c2d2_z.jpg" width="640" height="449" alt="Vim 7.3 Released"></a>
+</section>
+<section class="slide">
+  <h2>Social Media</h2>
+  <center>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#6699cc',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#6699cc'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: true,
+    behavior: 'all'
+  }
+}).render().setUser('chyatt').start();
+</script>
+  </center>
+</section>
+<section class="slide">
+  <h2>Extend.</h2>
+  <iframe src="http://ireneros.com/deck/deck.js-codemirror/introduction/#codemirror-intro" height="768px" width="1024px"></iframe> 
+</section>
+<section class="slide">
+  <h2>Extending Other Tools.</h2>
+  <p>&nbsp;</p>
+  <img src="img/vba.png" />
+</section>
+
+<section class="slide">
+  <h2>Version Control.</h2>
+  <p>&nbsp;</p>
+  <a href="www.uoguelph.ca/ccs"><img src="img/github-logo.png" /></a>
+</section>
+<section class="slide">
+  <h2>Version Control with PowerPoint</h2>
+  <p>&nbsp;</p>
+  <a href="www.uoguelph.ca/ccs"><img src="img/CCSPrintLogo1_blue.jpg" /></a>
+</section>
+<section class="slide">
+  <h2>Host Anywhere</h2>
+  <p>&nbsp;</p>
+  <a href="www.uoguelph.ca/ccs"><img src="img/CCSPrintLogo1_blue.jpg" /></a>
+</section>
+<section class="slide">
+  <h1>Your medium.</h1>
+</section>
+<section class="slide">
+  <h1>Your tools.</h1>
+</section>
+<section class="slide">
+  <h1>Your way.</h1>
+</section>
+<section class="slide">
+  <h1>Ask @chyatt</h1>
+</section>
+<!-- THE DECK ENDS HERE -->
+
+<form action="." method="get" class="goto-form">
+   <label for="goto-slide">Go to slide:</label>
+   <input type="number" name="slidenum" id="goto-slide" list="goto-datalist">
+   <datalist id="goto-datalist"></datalist>
+   <input type="submit" value="Go">
+</form>
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>
